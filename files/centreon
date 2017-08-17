@@ -1,0 +1,23 @@
+## BEGIN: CENTREON SUDO
+#
+User_Alias      CENTREON=www-data,centreon
+Defaults:CENTREON !requiretty
+# Monitoring engine Restart
+CENTREON   ALL = NOPASSWD: /etc/init.d/centengine* restart
+CENTREON   ALL = NOPASSWD: /etc/init.d/centengine restart
+# Monitoring engine reload
+CENTREON   ALL = NOPASSWD: /etc/init.d/centengine* reload
+CENTREON   ALL = NOPASSWD: /etc/init.d/centengine reload
+# Monitoring engine test config
+CENTREON   ALL = NOPASSWD: /usr/sbin/centengine* -v *
+CENTREON   ALL = NOPASSWD: /usr/sbin/centengine -v *
+# Monitoring engine test for optim config
+CENTREON   ALL = NOPASSWD: /usr/sbin/centengine* -s *
+CENTREON   ALL = NOPASSWD: /usr/sbin/centengine -s *
+# Snmptrapd Restart
+CENTREON   ALL = NOPASSWD: /etc/init.d/snmptrapd restart
+# Centreontrapd restart
+CENTREON   ALL = NOPASSWD: /etc/init.d/centreontrapd restart
+# Centreontrapd reload
+CENTREON   ALL = NOPASSWD: /etc/init.d/centreontrapd reload
+## END: CENTREON SUDO
