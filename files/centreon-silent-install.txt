@@ -1,9 +1,9 @@
 ## CentWeb: Web front Centreon for Nagios
-PROCESS_CENTREON_WWW=1
+PROCESS_CENTREON_WWW=0
 ## CentStorage: Log and charts archiving.
 PROCESS_CENTSTORAGE=1
 ## CentCore: Distributed Monitoring engine.
-PROCESS_CENTCORE=1
+PROCESS_CENTCORE=0
 ## CentPlugins: Centreon Plugins for nagios
 PROCESS_CENTREON_PLUGINS=1
 ## CentTraps: Centreon Snmp traps process for nagios
@@ -33,7 +33,7 @@ PEAR_MODULES_LIST="pear.lst"
 ## Where you want to install Centreon (Centreon root directory)
 INSTALL_DIR_CENTREON="/usr/local/centreon"
 ## Centreon log files directory
-CENTREON_LOG="/usr/local/centreon/log"
+CENTREON_LOG="/var/log/centreon"
 ## Centreon config files
 CENTREON_ETC="/etc/centreon"
 ## Where is your Centreon binaries directory ?
@@ -48,7 +48,7 @@ CENTREON_GENDIR="/usr/local/centreon"
 ## Where is your Centreon variable library directory ?
 CENTREON_VARLIB="/var/lib/centreon"
 ## Where is your CentPlugins Traps binary?
-CENTPLUGINSTRAPS_BINDIR="/usr/local/centreon/bin"
+CENTPLUGINSTRAPS_BINDIR="/usr/share/centreon/bin"
 ## Where is the RRD perl module installed [RRDs.pm]
 ## ATTENTION: ON x64 SYSTEMS THE PATH IS LIB64 INSTEAD OF LIB
 ## vv
@@ -64,12 +64,12 @@ MONITORINGENGINE_GROUP="nagios"
 ## What is the Monitoring engine log directory ?
 MONITORINGENGINE_LOG="/var/log/nagios"
 ## Where is your monitoring plugins (libexec) directory ?
-PLUGIN_DIR="/usr/local/nagios/libexec"
+PLUGIN_DIR="/usr/lib/nagios/plugins"
 ## Path to sudoers file (optional)
 ## Where is sudo configuration file
 SUDO_FILE="/etc/sudoers"
 ## What is the Monitoring engine init.d script ?
-MONITORINGENGINE_INIT_SCRIPT="/restart-nagios.sh"
+#MONITORINGENGINE_INIT_SCRIPT=
 ## What is the Monitoring engine binary ?
 MONITORINGENGINE_BINARY="/usr/local/nagios/bin/nagios"
 ## What is the Monitoring engine configuration directory ?
@@ -143,5 +143,6 @@ NAGIOS_GROUP="nagios"
 BIN_MAIL="/usr/bin/mail"
 ##
 ##
-CENTREONTRAPD_BINDIR="/usr/local/centreon/bin"
+CENTREONTRAPD_BINDIR="/usr/share/centreon/bin"
 CENTREONTRAPD_INSTALL_INIT=1
+

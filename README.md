@@ -2,7 +2,7 @@
 Centreon container to run on raspberry Pi
 
 Centreon on Raspberry:
-http://www.sugarbug.web4me.fr/framboise/full_raspcentreon/
+http://www.sugarbug.fr/framboise/full_raspcentreon/
 
 Following the above link I had problems to install snmp-mibs-downloader, so I followed the link below to install:
 
