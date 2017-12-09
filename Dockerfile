@@ -188,6 +188,6 @@ RUN chmod 755 /run.sh
 
 EXPOSE 80
 
-VOLUME /usr/lib/nagios/plugins /var/log/nagios /usr/local/nagios/bin/nagios /usr/local/nagios/etc/ /usr/local/nagios/etc/
+VOLUME /usr/lib/nagios/plugins /var/log/nagios /usr/local/nagios/bin/nagios /usr/local/nagios/etc/
 
 CMD ["/run.sh"]
